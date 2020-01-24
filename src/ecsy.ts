@@ -1,5 +1,5 @@
 import * as Stats from 'stats.js'
-import { World, System, TagComponent } from 'ecsy'
+import { World, System, TagComponent, enableRemoteDevtools } from 'ecsy'
 import { RendererSystemOptions, RendererSystem } from './systems/RendererSystem';
 import { MovableSystem } from './systems/MovableSystem';
 import { Velocity } from './components/Velocity';
@@ -37,7 +37,7 @@ export const options = {
 
 export const initEcsy = () => {
   if (ctx) {
-
+    enableRemoteDevtools()
     var world = new World();
     world
       .registerSystem(MovableSystem)
@@ -69,8 +69,6 @@ export const initEcsy = () => {
     var lastTime = performance.now();
     run();
   }
-
-
 }
 
 function getRandomVelocity() {
