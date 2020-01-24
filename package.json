@@ -1,0 +1,58 @@
+{
+  "name": "ecsy-threejs-game-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --config webpack.config.js --mode development",
+    "browsersync": "browser-sync start --server --watch",
+    "bs": "browser-sync dist -w",
+    "start": "concurrently \"npm:webpack\" \"npm:bs\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerzakm/ecsy-threejs-game-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerzakm/ecsy-threejs-game-examples/issues"
+  },
+  "homepage": "https://github.com/jerzakm/ecsy-threejs-game-examples#readme",
+  "dependencies": {
+    "ecsy": "^0.2.2",
+    "howler": "^2.1.3",
+    "matter-js": "^0.14.2",
+    "stats.js": "^0.17.0",
+    "three": "^0.112.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/howler": "^2.1.2",
+    "@types/matter-js": "^0.10.9",
+    "@types/node": "^13.5.0",
+    "@types/node-sass": "^4.11.0",
+    "@types/stats.js": "^0.17.0",
+    "@types/three": "^0.103.2",
+    "@types/webpack-env": "^1.15.0",
+    "autoprefixer": "^9.5.0",
+    "browser-sync": "^2.26.3",
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-link-type-plugin": "^1.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.1",
+    "typescript": "^3.4.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
