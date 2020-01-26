@@ -1,13 +1,12 @@
 import { System } from "ecsy";
-import { Velocity } from "../components/Velocity";
-import { Position } from "../components/Position";
 import { Body, Engine, World, Pairs, } from "matter-js";
+import { engine } from "../ecsy";
 
 export class PhysicsSystem extends System {
   engine?: Engine
   world?: World
   init() {
-    this.engine = Engine.create()
+    this.engine = engine
     this.world = this.engine.world
   }
 

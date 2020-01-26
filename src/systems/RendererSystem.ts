@@ -3,12 +3,6 @@ import { options, scene, camera } from "../ecsy";
 import { Scene, Color, WebGLRenderer, PerspectiveCamera } from "three"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
-export interface RendererSystemOptions {
-  canvasWidth: number
-  canvasHeight: number
-  SHAPE_HALF_SIZE: number
-  SHAPE_SIZE: number
-}
 
 export class RendererSystem extends System {
   // This method will get called on every frame by default
@@ -35,6 +29,5 @@ export class RendererSystem extends System {
 
   execute(delta: number, time: number) {
     this.renderer?.render(scene, camera)
-
   }
 }
